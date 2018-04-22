@@ -57,3 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# 版本锁定
+yarn.lock
+package-lock.json
+
+# 测试文件
+app/myConfig.json

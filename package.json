@@ -4,6 +4,7 @@
   "description": "Crawler for taobao mirror.",
   "main": "nCrawler.js",
   "scripts": {
+    "start": "node ./app/nCrawler.js",
     "test": ""
   },
   "dependencies": {

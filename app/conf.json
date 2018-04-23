@@ -1,7 +1,10 @@
 {
   "proxy": {
-    "url": "",
-    "name": "",
-    "password": ""
+    "url": "xxx.xxx.xxx",
+    "name": "name",
+    "password": "password"
+  },
+  "fileVersion": {
+    "recentVer": "0"
   }
 }

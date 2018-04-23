@@ -2,7 +2,7 @@
    * @Author: Erwin
    * @Date:   2018-04-22 11-04-67
    * @Last modified by:   erwin
-   * @Last modified time: 2018-04-23 16-04-41
+   * @Last modified time: 2018-04-23 16-04-71
    */
 
   const request = require('request');
@@ -56,10 +56,10 @@
           uri: 'https://npm.taobao.org' + fl,
           dir: versionDir
         }).then(function(info) {
-          console.log('文件下载成功:', fl);
+          console.log('[' + (fileDownSuccessNum + 1) + '/' + fileList.length + ']文件下载成功:', fl);
           fileDownSuccessNum++;
           if (fileDownSuccessNum === fileList.length) {
-            console.log('当前版本所有文件下载成功:', versionDir);
+            console.log('---------------------当前版本所有文件下载成功:', versionDir);
             completeDown();
           }
         }, function(error) {

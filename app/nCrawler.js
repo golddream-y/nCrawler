@@ -2,13 +2,14 @@
    * @Author: Erwin
    * @Date:   2018-04-22 11-04-67
    * @Last modified by:   erwin
-   * @Last modified time: 2018-04-23 16-04-71
+   * @Last modified time: 2018-04-30 14-04-68
    */
 
   const request = require('request');
   const {
     proxy,
-    fileVersion
+    fileVersion,
+    mirrirName
   } = require('./conf.json');
   const Promise = require("bluebird");
 
@@ -74,10 +75,11 @@
   request({
     method: 'get',
     proxy: proxyUrl,
-    uri: taobaoHost + '/mirrors/node-sass/'
+    // TODO: 抽空改成数组配置
+    uri: taobaoHost + '/mirrors/' + mirrirName + '/'
   }, function(error, response, body) {
     if (error) {
-      console.log('获取node-sass版本目录错误：', error);
+      console.log('获取' + mirrirName + '版本目录错误：', error);
       return;
     }
     // 当前镜像类别的版本清单

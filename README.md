@@ -64,6 +64,6 @@ node app/nCrawler.js
   "fileVersion": {
     "recentVer": "需要下载的每个镜像包的最近的几个版本，输入4则下载最新的四个版本，输入0为所有版本全部下载"
   }
+  "mirrirName": "需要下载镜像名称"
 }
 ```
-

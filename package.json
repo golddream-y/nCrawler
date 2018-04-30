@@ -2,7 +2,7 @@
   "name": "n-crawler",
   "version": "0.0.1",
   "description": "Crawler for taobao mirror.",
-  "main": "nCrawler.js",
+  "main": "./app/nCrawler.js",
   "scripts": {
     "start": "node ./app/nCrawler.js",
     "test": ""
@@ -18,7 +18,7 @@
     "url": "git+https://github.com/golddream-y/nCrawler.git"
   },
   "author": "Erwin",
-  "license": "BSD-2-Clause",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/golddream-y/nCrawler/issues"
   },
